@@ -44,6 +44,9 @@ int		ft_toupper(int c);
 //This function changes a uppercase letter into lowercase letter
 int		ft_tolower(int c);
 // This function compares at most the first n bytes of str1 and str2.
+//... if Return value < 0 then it indicates str1 is less than str2.
+//... if Return value > 0 then it indicates str2 is less than str1.
+//... if Return value = 0 then it indicates str1 is equal to str2.
 int	ft_strncmp(char *s1, char *s2, unsigned int n);
 
 #endif
