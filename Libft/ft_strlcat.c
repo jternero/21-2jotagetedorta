@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 13:50:57 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/21 22:17:18 by jternero         ###   ########.fr       */
+/*   Created: 2022/09/23 19:34:23 by jternero          #+#    #+#             */
+/*   Updated: 2022/09/23 20:07:33 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+size_t	ft_strlcat(char	*dst, const char *src, size_t dstsize)
 {
-	if ((c >= 48 && c <= 57)
-		|| (c >= 65 && c <= 90)
-		|| (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+    
 }

@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isdigit.c                                          :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jternero <jternero@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 13:41:43 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/20 13:46:10 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/21 22:17:58 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+#include "libft.h"
+
+int	ft_isdigit(int c)
 {
-	if (c >= 48 && c<= 57)
+	if (c >= 48 && c <= 57)
 		return (1);
 	return (0);
 }

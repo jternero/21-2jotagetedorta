@@ -1,22 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 13:50:57 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/21 22:17:18 by jternero         ###   ########.fr       */
+/*   Created: 2022/09/22 12:24:34 by jternero          #+#    #+#             */
+/*   Updated: 2022/09/23 19:33:27 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if ((c >= 48 && c <= 57)
-		|| (c >= 65 && c <= 90)
-		|| (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	void	*ptr;
+
+	if (!dst && !src)
+		return (0);
+	ptr = dst;
+	if (src < dst)
+	{
+		src += len;
+		dst += len;
+		while (len--)
+			*(char *)--dst = *(char *)--src;
+	}
+	else
+		while (len--)
+			*(char *)dst++ = *(char *)src++;
+	return (ptr);
 }

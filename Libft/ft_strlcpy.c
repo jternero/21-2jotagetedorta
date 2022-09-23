@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 13:50:57 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/21 22:17:18 by jternero         ###   ########.fr       */
+/*   Created: 2022/09/22 13:30:34 by jternero          #+#    #+#             */
+/*   Updated: 2022/09/23 17:52:17 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+size_t	ft_strlcpy(char	*dst, const char *src, size_t dstsize)
 {
-	if ((c >= 48 && c <= 57)
-		|| (c >= 65 && c <= 90)
-		|| (c >= 97 && c <= 122))
-		return (1);
-	return (0);
+	size_t	srclen;
+
+	srclen = ft_strlen(src);
+	if (srclen + 1 < dstsize)
+	{
+		ft_memcpy(dst, src, srclen + 1);
+	}
+	else if (dstsize != 0)
+	{
+		ft_memcpy(dst, src, dstsize - 1);
+		dst[dstsize -1] = '\0';
+	}
+	return (srclen);
 }
