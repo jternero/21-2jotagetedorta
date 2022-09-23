@@ -6,12 +6,12 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 21:11:19 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/23 20:05:21 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/23 21:38:02 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-/*
+
 #include "libft.h"
 #include <stdio.h>
 #include <string.h>
@@ -132,6 +132,36 @@ int main ()
 
    printf("Final destination string : |%s|", dest);
    
+   return(0);
+}
+
+
+#include <stdio.h>
+
+int main () {
+   int i = 0;
+   char c;
+   char str[] = "holaquetaaal";
+   
+   while(str[i]) 
+   {
+      putchar (ft_toupper(str[i]));
+      i++;
+   }
+   return(0);
+}
+
+
+int main () {
+   int i = 0;
+   char c;
+   char str[] = "HOLAQIUETAL";
+   
+   while(str[i]) 
+   {
+      putchar (ft_tolower(str[i]));
+      i++;
+   }
    return(0);
 }
 */
