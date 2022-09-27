@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 20:06:00 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/23 21:36:41 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/24 12:10:58 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,16 @@ int		ft_tolower(int c);
 //... if Return value < 0 then it indicates str1 is less than str2.
 //... if Return value > 0 then it indicates str2 is less than str1.
 //... if Return value = 0 then it indicates str1 is equal to str2.
-int	ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
+//This function locates the last occurrence of c 
+//(converted to a char) in the string pointed to by s.
+// The terminating null character is considered to be part of the string.
+//A pointer to the located character, 
+//or NULL if the character doesn't occur in the string.
+char	*ft_strrchr(const char *str, int c);
+//The strchr() function finds the first occurrence of c (converted to a char)
+// in the string pointed to by s. 
+//The terminating NUL character is considered to be part of the string.
+char	*ft_strchr(const char *str, int c);
 
 #endif

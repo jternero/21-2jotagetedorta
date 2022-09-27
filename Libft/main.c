@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 21:11:19 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/23 21:38:02 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/24 14:40:00 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -164,4 +164,26 @@ int main () {
    }
    return(0);
 }
+
+
+int main () {
+   const char str[] = "Very good News";
+   const char ch = 'N';
+   char *ret;
+
+   ret = ft_strchr(str, ch);
+
+   printf("String after |%c| is - |%s|\n", ch, ret);
+   
+   return(0);
+}
+
 */
+
+int main()
+{
+	char *str = "HOLA QUE TAL ESTAS?";
+	
+	ft_bzero(str, 5);
+	printf("%s\n", str);
+}
