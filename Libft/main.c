@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 21:11:19 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/24 14:40:00 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/27 12:57:49 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -178,7 +178,7 @@ int main () {
    return(0);
 }
 
-*/
+
 
 int main()
 {
@@ -187,3 +187,4 @@ int main()
 	ft_bzero(str, 5);
 	printf("%s\n", str);
 }
+*/

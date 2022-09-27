@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 20:06:00 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/24 12:10:58 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/27 20:51:54 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int		ft_tolower(int c);
 //... if Return value < 0 then it indicates str1 is less than str2.
 //... if Return value > 0 then it indicates str2 is less than str1.
 //... if Return value = 0 then it indicates str1 is equal to str2.
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 //This function locates the last occurrence of c 
 //(converted to a char) in the string pointed to by s.
 // The terminating null character is considered to be part of the string.
@@ -58,5 +58,19 @@ char	*ft_strrchr(const char *str, int c);
 // in the string pointed to by s. 
 //The terminating NUL character is considered to be part of the string.
 char	*ft_strchr(const char *str, int c);
+//This function returns a pointer to the matching byte or NULL
+//if the character does not occur in the given memory area.
+char	*ft_memchr(const void *s, int c, size_t n);
+//if Return value < 0 then it indicates str1 is less than str2.
+//if Return value > 0 then it indicates str2 is less than str1.
+//if Return value = 0 then it indicates str1 is equal to str2.
+int		ft_memcmp(const void *str1, const void *str2, size_t n);
+//If needle is an empty string, haystack is returned;
+//if needle occurs nowhere in haystack, NULL is returned; 
+//otherwise a pointer to the first character 
+//of the first occurrence of needle is returned.
+char	*ft_strnstr(const char *bigone, const char *littleone, size_t len);
+//covert string to integer
+int		ft_atoi(const char *str);
 
 #endif
