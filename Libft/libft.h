@@ -6,13 +6,14 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 20:06:00 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/27 20:51:54 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/28 19:46:36 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
+
 //This function tells if int c is an alphabetic character
 int		ft_isalpha(int c);
 //this function tells if int c is an numeric Character
@@ -72,5 +73,7 @@ int		ft_memcmp(const void *str1, const void *str2, size_t n);
 char	*ft_strnstr(const char *bigone, const char *littleone, size_t len);
 //covert string to integer
 int		ft_atoi(const char *str);
+//
+void	*ft_calloc(size_t count, size_t size);
 
 #endif
