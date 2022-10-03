@@ -12,7 +12,7 @@ SRCS		= 	ft_bzero.c ft_isalnum.c                \
 				ft_memchr.c ft_memcmp.c ft_strnstr.c   \
 				ft_atoi.c ft_calloc.c ft_strdup.c      \
 				ft_substr.c ft_strtrim.c ft_strjoin.c  \
-				ft_split.c
+				ft_split.c ft_itoa.c
 OBJS		= ${SRCS:.c=.o}
 all: ${NAME}
 

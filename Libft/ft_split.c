@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 17:52:29 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/30 18:01:51 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/03 15:44:58 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,18 +66,17 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	j = -1;
 	word = ft_count_word(s, c);
-	if (!(strs = (char **)malloc((word + 1) * sizeof(char *))))
+	strs = (char **)malloc((word + 1) * sizeof(char *));
+	if (!(strs))
 		return (NULL);
 	while (++j < word)
 	{
 		while (s[i] == c)
 			i++;
 		size = ft_size_word(s, c, i);
-		if (!(strs[j] = ft_substr(s, i, size)))
-		{
-			ft_free(strs, j);
-			return (NULL);
-		}
+		strs[j] = ft_substr(s, i, size);
+		if (!strs[j])
+			return (ft_free(strs, j), NULL);
 		i += size;
 	}
 	strs[j] = 0;
