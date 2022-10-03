@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 17:50:41 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/29 18:59:01 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/30 11:55:44 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t		i;
-	char	*res;
+	char		*res;
 
 	i = 0;
 	if (!s)

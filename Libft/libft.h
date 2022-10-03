@@ -6,13 +6,14 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 20:06:00 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/28 19:46:36 by jternero         ###   ########.fr       */
+/*   Updated: 2022/09/30 18:03:12 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stddef.h>
+# include <stdlib.h>
 
 //This function tells if int c is an alphabetic character
 int		ft_isalpha(int c);
@@ -75,5 +76,16 @@ char	*ft_strnstr(const char *bigone, const char *littleone, size_t len);
 int		ft_atoi(const char *str);
 //
 void	*ft_calloc(size_t count, size_t size);
+//
+char	*ft_strdup(const char *src);
+//
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+//
+char	*ft_strtrim(char const *s1, char const *set);
+//
+char	*ft_strjoin(char const *s1, char const *s2);
+//
+char	**ft_split(char const *s, char c);
+
 
 #endif
