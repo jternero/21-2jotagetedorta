@@ -1,56 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/03 15:48:08 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/04 18:40:01 by jternero         ###   ########.fr       */
+/*   Created: 2022/10/04 19:02:02 by jternero          #+#    #+#             */
+/*   Updated: 2022/10/04 20:00:20 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_nb_len(int nb)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	len;
+	char	*tmp;
+	int		i;
 
-	len = 0;
-	if (nb <= 0)
-		len++;
-	while (nb)
-	{
-		len++;
-		nb = nb / 10;
-	}
-	return (len);
-}
-
-char	*ft_itoa(int n)
-{
-	int		len;
-	char	*str;
-	long	nb;
-
-	len = ft_nb_len(n);
-	nb = n;
-	str = malloc(sizeof(char) * len + 1);
-	if (!str)
+	i = 0;
+	tmp = malloc(ft_strlen(s) + 1);
+	if (!tmp)
 		return (NULL);
-	if (nb < 0)
+	while (s[i])
 	{
-		str[0] = '-';
-		nb = -nb;
+		tmp[i] = f(i, s[i]);
+		i++;
 	}
-	if (nb == 0)
-		str[0] = '0';
-	str[len--] = '\0';
-	while (nb)
-	{
-		str[len] = nb % 10 + '0';
-		len--;
-		nb = nb / 10;
-	}
-	return (str);
+	tmp[i] = '\0';
+	return (tmp);
 }

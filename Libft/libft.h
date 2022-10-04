@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 20:06:00 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/03 18:54:48 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/04 21:21:25 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,9 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	**ft_split(char const *s, char c);
 //
 char	*ft_itoa(int n);
+//
+char	*ft_strmapi(const char *s, char f(unsigned int, char));
+//
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+
 #endif
