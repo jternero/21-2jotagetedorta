@@ -14,8 +14,11 @@ SRCS		= 	ft_bzero.c ft_isalnum.c                \
 				ft_substr.c ft_strtrim.c ft_strjoin.c  \
 				ft_split.c ft_itoa.c ft_strmapi.c      \
 				ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
+				ft_putendl_fd.c ft_putnbr_fd.c
+SRCS_BONUS	=	ft_lstnew.c 
 
 OBJS		= ${SRCS:.c=.o}
+OBJS_BONUS		= ${SRCS_BONUS:.c=.o}
 all: ${NAME}
 
 ${NAME}	:	${OBJS}
@@ -25,7 +28,12 @@ clean	:
 		${RM} ${OBJS}
 fclean	:	clean
 		${RM} ${NAME}
-
+bonus	: all
+#		${OBJS_BONUS}
+		gcc $(CFLAGS) -c $(SRCS_BONUS)
+#		gcc -shared -o libft.so $(OBJS_BONUS)
+		${AR} ${NAME} ${OBJS_BONUS}
+		
 so		:	
 		$(CC) -fPIC $(CFLAGS) $(SRC)
 		gcc -shared -o libft.so $(OBJ)
