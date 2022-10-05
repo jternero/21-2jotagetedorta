@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 20:06:00 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/04 21:21:25 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/05 14:30:44 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
+# include <stdio.h>
 
 //This function tells if int c is an alphabetic character
 int		ft_isalpha(int c);
@@ -92,5 +94,9 @@ char	*ft_itoa(int n);
 char	*ft_strmapi(const char *s, char f(unsigned int, char));
 //
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+//
+void	ft_putchar_fd(char c, int fd);
+//
+void	ft_putstr_fd(char *s, int fd);
 
 #endif
