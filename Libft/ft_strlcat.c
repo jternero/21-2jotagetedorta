@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 19:34:23 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/23 20:30:15 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/06 21:03:44 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[c] = '\0';
 	return (ft_strlen(dst) + ft_strlen(&src[d]));
 }
+
+/*
+nos devuelve la longitud de src y dst concatendas.
+*/

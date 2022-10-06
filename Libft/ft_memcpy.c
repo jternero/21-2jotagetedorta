@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 21:23:46 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/23 18:02:28 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/06 19:56:45 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+/*
+esta funcion copia en la memoria,
+copia en la direccion de memoria dst n bytes 
+de la direccion de memoria src.
+
+no devuelve ningun valor, solo actua dentro 
+de las direcciones de memoria .
+
+*/

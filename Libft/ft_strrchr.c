@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 22:16:01 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/24 12:13:14 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/06 21:32:06 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,23 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (0);
 }
+
+/*
+esta funcipon busca un caracter en concreto (int c)
+en la cadena de caracteres str,
+pero empieza desde el final de la cadena
+para eso primero recorremos str 
+y sabiendo la longitud de str
+podemos decirle que empiece por esa posicion 
+y vaya hacia atras en la cadena,
+cuando encuentra el caracter que le hemos dicho como parametro
+nos dara como valor devuelto lo que quede de la cadena hasta el cracter nulo.
+c = q
+str = como esta el queso
+resultado de strrchr = queso 
+
+int main(void)
+{
+	printf("esto queda depues de strrchr /\n%s", ft_strrchr("como esta el queso", 113));
+}
+*/

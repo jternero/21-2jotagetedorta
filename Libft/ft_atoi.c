@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 21:11:57 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/27 20:58:16 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/06 22:46:15 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,3 +48,14 @@ int	ft_atoi(const char *str)
 	result *= sign;
 	return (result);
 }
+
+/*
+la funcion atoi cumple la tarea 
+de interpretar una cadena de caracteres numericos 
+y los devuelve convertidos en int. tiene encuenta el caracter + y - .
+
+int main(void)
+{
+	printf("Este es el numero covertido a int  %d\n", ft_atoi("-4641684"));
+}
+*/

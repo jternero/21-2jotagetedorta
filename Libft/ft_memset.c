@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 14:26:16 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/21 22:18:29 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/06 19:51:22 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,14 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+/*
+La función memset rellena los primeros len bytes 
+del área de memoria apuntada por b con el
+byte constante c.
+
+la funcion devuelve un puntero al area de memoria b
+
+en el puntero b se guardaran 'len' veces el caracter c,
+reservando la memoria. 
+*/

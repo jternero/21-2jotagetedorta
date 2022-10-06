@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 12:24:34 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/23 19:33:27 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/06 20:02:31 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,11 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			*(char *)dst++ = *(char *)src++;
 	return (ptr);
 }
+
+/*
+La función memmove() devuelve un puntero a dest.
+
+copia len bytes del area de memoria src al area de memoria dest. 
+las areas de memoria pueden solaparse.
+
+*/

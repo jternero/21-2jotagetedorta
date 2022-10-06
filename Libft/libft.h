@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 20:06:00 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/06 13:45:48 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/06 22:30:03 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,11 +75,11 @@ char	*ft_memchr(const void *s, int c, size_t n);
 //if Return value > 0 then it indicates str2 is less than str1.
 //if Return value = 0 then it indicates str1 is equal to str2.
 int		ft_memcmp(const void *str1, const void *str2, size_t n);
-//If needle is an empty string, haystack is returned;
-//if needle occurs nowhere in haystack, NULL is returned; 
+//If littleone is an empty string, bigone is returned;
+//if littleone occurs nowhere in bigone, NULL is returned; 
 //otherwise a pointer to the first character 
-//of the first occurrence of needle is returned.
-char	*ft_strnstr(const char *bigone, const char *littleone, size_t len);
+//of the first occurrence of little is returned.
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 //covert string to integer
 int		ft_atoi(const char *str);
 //
