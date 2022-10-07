@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 19:16:58 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/05 19:34:17 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:17:55 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,7 @@ int	ft_lstsize(t_list *lst)
 	}
 	return ((int)i);
 }
+
+/*
+esta funcion cuenta los nodos de la lista
+*/

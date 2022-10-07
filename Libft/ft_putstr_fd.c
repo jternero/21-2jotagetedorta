@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 14:15:06 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/05 16:13:26 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:13:18 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,3 +17,8 @@ void	ft_putstr_fd(char *s, int fd)
 	while (*s)
 		write (fd, s++, 1);
 }
+
+/*
+imprime por pantalla un string 
+que le demos como parametro
+*/

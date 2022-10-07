@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 21:20:42 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/05 14:11:14 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:12:21 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+/*
+esta funcion aplica una funcion a cada uno de los indices de
+la cadena s, no devuelve nada solo aplica la funcion descrita como parametro
+*/

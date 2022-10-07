@@ -6,12 +6,22 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 17:50:41 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/30 11:55:44 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 12:47:16 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (*(s++))
+		i++;
+	return (i);
+}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -39,3 +49,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res[i] = '\0';
 	return (res);
 }
+
+/*
+Esta funcion nos devuelve una sub cadena de la 
+cadena que le demos como principal.
+le indicaremos la posicion del string donde debemos empezar
+a hacer la subcadena. Crearemos una reserva de memoria de
+len +1, contando el caracter nulo.
+
+
+int main(void)
+{
+	char	*str = "Welcome to the dark side";
+	
+	printf("The original string is |%s\n", str);
+	
+	printf("The Substring generated is |%s", ft_substr(str, 11, 4));
+}
+*/

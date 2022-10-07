@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 19:02:02 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/04 20:00:20 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:07:14 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	tmp[i] = '\0';
 	return (tmp);
 }
+
+/*
+aplica una funcion a cada uno de los caracteres que 
+componen la string s.
+tiene en cuenta el caracter nulo al final de la cadena. 
+*/

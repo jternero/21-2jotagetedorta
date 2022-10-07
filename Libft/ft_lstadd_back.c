@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 19:47:02 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/06 12:52:57 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:19:05 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,7 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 		}
 	}
 }
+
+/*
+crea un nuevo nodo al final de la lista
+*/

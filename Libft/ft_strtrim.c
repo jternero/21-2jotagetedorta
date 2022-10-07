@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 21:11:54 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/05 19:07:10 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 13:40:04 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_substr(s1, 0, len + 1);
 	return (str);
 }
+
+/*
+Esta funcion recorta la string que le demos como parametro
+a partir del strin set que le indiquemos
+
+*/

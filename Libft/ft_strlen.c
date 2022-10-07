@@ -6,12 +6,11 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/20 14:10:43 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/06 19:44:39 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 12:05:10 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 #include <stdlib.h>
 
 size_t	ft_strlen(const char *s)

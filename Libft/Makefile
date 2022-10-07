@@ -1,5 +1,5 @@
 NAME		= libft.a
-CC			= gcc -MD
+CC			= gcc
 AR 			= ar -rcs
 CFLAGS		= -Werror -Wall -Wextra
 RM			= rm -f
@@ -25,14 +25,16 @@ all: ${NAME}
 
 ${NAME}	:	${OBJS}
 		${AR} ${NAME} ${OBJS}
+bonus	: all
+		gcc $(CFLAGS) -c $(SRCS_BONUS)
+		${AR} ${NAME} ${OBJS_BONUS}
+%.o: %.c
+		$(CC) -c $(CFLAGS) $?
 
 clean	:
 		${RM} ${OBJS}
 fclean	:	clean
 		${RM} ${NAME}
-bonus	: all
-		gcc $(CFLAGS) -c $(SRCS_BONUS)
-		${AR} ${NAME} ${OBJS_BONUS}
 re		: fclean all
 
 .PHONY	: clean fclean .c.o

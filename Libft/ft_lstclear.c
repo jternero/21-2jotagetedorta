@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 13:23:19 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/06 13:26:51 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:21:42 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	}
 	*lst = NULL;
 }
+
+/*
+esta funcion elimina el nodo dado y todos los consecutivos.
+quedara un nodo con nulo al final de la lista.
+*/

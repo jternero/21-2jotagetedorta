@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 13:29:15 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/06 13:31:50 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:22:16 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+
+/*
+esta funcion aplica una funcion en el contenido de cada nodo.
+*/

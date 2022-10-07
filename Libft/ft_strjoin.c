@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 17:47:13 by jternero          #+#    #+#             */
-/*   Updated: 2022/09/30 17:48:07 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 13:38:55 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (NULL);
 }
+
+/*
+esta funcion incluye una string a continuacion de otra,
+mide la primera string y la que va a incluir, reserva la memoria
+para la nueva string y las concatena. 
+*/

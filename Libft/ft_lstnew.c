@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 17:08:15 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/05 17:26:29 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:16:08 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,7 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
+
+/*
+esta funcion crea un nuevo nodo en la lista
+*/

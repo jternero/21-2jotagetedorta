@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 16:17:32 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/05 16:49:31 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:14:10 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_print_nbr(n, fd);
 }
+
+/* imprime por pantalla un numero dado como parametro,
+para eso creo una funcion que imprima los numeros que son mayores de 9,
+*/

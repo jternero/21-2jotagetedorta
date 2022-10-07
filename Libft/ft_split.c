@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 17:52:29 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/03 15:44:58 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 13:53:16 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ static int	ft_count_word(char const *s, char c)
 	}
 	return (word);
 }
+//esta funcion creada cuenta las palabras 
+// que se encuentran entre los espacios.
 
 static int	ft_size_word(char const *s, char c, int i)
 
@@ -47,6 +49,7 @@ static int	ft_size_word(char const *s, char c, int i)
 	}
 	return (size);
 }
+//esta funcion creada mide las palabras
 
 static void	ft_free(char **strs, int j)
 {
@@ -54,6 +57,7 @@ static void	ft_free(char **strs, int j)
 		free(strs[j]);
 	free(strs);
 }
+//esta funcion creada libera la memoria 
 
 char	**ft_split(char const *s, char c)
 {
@@ -82,3 +86,8 @@ char	**ft_split(char const *s, char c)
 	strs[j] = 0;
 	return (strs);
 }
+
+//declaramos los contadores, la reserva de memoria y
+//con la funcion count words sabemos cuantas palabras seran en total
+//asi poder crear la memoria correctamente
+//si la reserva de memoria 

@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 16:13:45 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/05 16:15:22 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/07 14:14:39 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,7 @@ void	ft_putendl_fd(char *s, int fd)
 		write (fd, s++, 1);
 	write (fd, "\n", 1);
 }
+
+/*
+imprime un salto de linea al final del string.
+*/
