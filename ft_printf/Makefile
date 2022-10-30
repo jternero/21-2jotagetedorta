@@ -6,7 +6,7 @@
 #    By: jternero <jternero@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/16 16:55:59 by jternero          #+#    #+#              #
-#    Updated: 2022/10/20 20:11:29 by jternero         ###   ########.fr        #
+#    Updated: 2022/10/30 20:06:35 by jternero         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRCS 		= 	ft_printf.c		 \
 				ft_putstr.c		 \
 				ft_putnbr.c		 \
 				ft_putuint.c	 \
+				ft_puthexnbr.c   \
 				
 				
 OBJS		= ${SRCS:.c=.o}

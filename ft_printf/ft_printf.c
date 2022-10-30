@@ -6,7 +6,7 @@
 /*   By: jternero <jternero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 00:12:57 by jternero          #+#    #+#             */
-/*   Updated: 2022/10/20 20:11:44 by jternero         ###   ########.fr       */
+/*   Updated: 2022/10/30 20:13:42 by jternero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,15 @@ void	ft_form(va_list args, char *str, int *ptr)
 		ft_putuint(va_arg(args, unsigned int), ptr);
 	if (*str == '%')
 		ft_putchar(*str, ptr);
+	if (*str == 'x')
+		ft_puthexnbr(va_arg(args, unsigned int), ptr, HEX_LOW_BASE);
+	if (*str == 'X')
+		ft_puthexnbr(va_arg(args, unsigned int), ptr, HEX_UPP_BASE);
+	if (*str == 'p')
+	{
+		ft_putstr("0x", ptr);
+		ft_puthexnbr(va_arg(args, unsigned long long), ptr, HEX_LOW_BASE);
+	}
 }
 
 int	ft_printf(char const *str, ...)
@@ -47,16 +56,3 @@ int	ft_printf(char const *str, ...)
 	va_end(args);
 	return (ptr);
 }
-
-/*
-int	main(void)
-{
-	int	len;
-
-	len = ft_printf("ESTO ES UN CARACTER   ||%c||\n", 'K');
-	ft_printf("%d\n", len);
-	ft_printf("ESTO ES UNA CADENA  ||%s||\n", "MADAFACA");
-	ft_printf("ESTO ES UN NUMERO   ||%d||%i||\n", 2048, 1024);
-	ft_printf("ESTO ES UN NUMERO   ||%u||\n", -1);
-}
-*/
